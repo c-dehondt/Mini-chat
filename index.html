@@ -3,19 +3,37 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Mini chat</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mdp.css">
+        <link rel="stylesheet" href="css/mdp.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-      
+      <main class="container">
+        <h1 class="text-center">Mini Chat</h1>
+        <div class="row justify-content-around">
+          <div id="chat" class="col-10"></div>
+
+
+          <div class="row justify-content-around">
+            <input  id="message" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre Message"></input >
+            <button class="btn btn-warning">Envoyer</button>
+          </div>
+        </div>
+      </main>
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

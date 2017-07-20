@@ -1,0 +1,12 @@
+
+#chat{
+  background-color: #719DB0;
+  width: 100%;
+  height: 350px;
+  overflow-y:
+}
+
+.utilisateur{
+  display: flex;
+  align-self: flex-end;
+}
