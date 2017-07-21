@@ -1,12 +1,46 @@
-
-#chat{
-  background-color: #719DB0;
-  width: 100%;
-  height: 350px;
-  overflow-y:
+#discussion{
+  /*display: none;*/
 }
 
-.utilisateur{
+#chat{
+  background-color: white;
+  width: 100%;
+  height: 350px;
+  overflow-y:scroll;
+}
+
+.tchat{
+  background-color: #719DB0;
+
+}
+
+input{
+
+}
+
+.robot, .conversationU{
   display: flex;
-  align-self: flex-end;
+  border: 1px solid red;
+  border-radius:10px;
+  width:70%;
+  opacity: 0.8;
+}
+
+.conversationU{
+  justify-content:flex-end;
+  background-color: yellow;
+  margin-left: 25%;
+}
+
+.robot{
+  justify-content:flex-start;
+  background-color: red;
+  margin-right: 25%;
+}
+
+img{
+  text-align:left;
+  width: auto;
+  height:50px;
+  border-radius: 10px;
 }

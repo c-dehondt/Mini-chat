@@ -24,13 +24,29 @@
       <main class="container">
         <h1 class="text-center">Mini Chat</h1>
         <div class="row justify-content-around">
-          <div id="chat" class="col-10"></div>
-
-
-          <div class="row justify-content-around">
-            <input  id="message" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre Message"></input >
-            <button class="btn btn-warning">Envoyer</button>
+          <div class="card">
+            <h2>Entrez votre pseudo</h2>
+            <input  id="name" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre pseudo"></input >
+            <button id="valider" class="btn btn-warning">Envoyer</button>
           </div>
+          <section class="col-12 tchat row">
+            <h2 class="text-center">djcize,xoqs;xa</h2>
+          <div id="discussion" class="row col-12">
+          <div id="chat" class="card col-10"></div>
+          <div class="">
+            <img src="" alt="profil tchateur">
+            <img src="" alt="profil tchateur">
+            <img src="" alt="profil tchateur">
+            <img src="" alt="profil tchateur">
+            <img src="" alt="profil tchateur">
+            <img src="" alt="profil tchateur">
+          </div>
+            <div class="row justify-content-around">
+              <input  id="message" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre Message"></input >
+              <button id="envoyer" class="btn btn-warning">Envoyer</button>
+            </div>
+          </div>
+        </section>
         </div>
       </main>
 
