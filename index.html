@@ -3,19 +3,56 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Mini chat</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mdp.css">
+        <link rel="stylesheet" href="css/mdp.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-      
+      <main class="container">
+        <h1 class="text-center">Mini Chat</h1>
+        <div class="row justify-content-around">
+          <div id="accueil" class="row justify-content-center col-12 ">
+            <img id="imgAccueil" src="img/tchater.jpg" alt="logo">
+            <div class="inscription justify-content-center">
+              <h2 class="text-center">Entrez votre pseudo</h2>
+              <input  id="name" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre pseudo"></input >
+              <button id="valider" class="btn btn-warning">Envoyer</button>
+            </div>
+          </div>
+          <section id="discussion" class="col-12 tchat row">
+            <h2 class="text-center col-12">Bienvenue</h2>
+            <div  class="row col-10">
+              <div id="chat" class="card col-10"></div>
+              <div id="femme" class="col-2">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+              </div>
+            </div>
+            <div class="finition row col-12 justify-content-start">
+              <input  id="message" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre Message"></input >
+              <button id="envoyer" class="btn btn-warning">Envoyer</button>
+            </div>
+        </section>
+        </div>
+      </main>
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
