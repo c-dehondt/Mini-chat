@@ -26,7 +26,7 @@
         <div class="row justify-content-around">
           <div id="accueil" class="row justify-content-center col-12 ">
             <img id="imgAccueil" src="img/tchater.jpg" alt="logo">
-            <div class="inscription justify-content-center">
+            <div id="inscription" class="justify-content-center">
               <h2 class="text-center">Entrez votre pseudo</h2>
               <input  id="name" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre pseudo"></input >
               <button id="valider" class="btn btn-warning">Envoyer</button>
@@ -34,20 +34,65 @@
           </div>
           <section id="discussion" class="col-12 tchat row">
             <h2 class="text-center col-12">Bienvenue</h2>
-            <div  class="row col-10">
-              <div id="chat" class="card col-10"></div>
-              <div id="femme" class="col-2">
-                <img class="fille" src="" alt="profil tchateur">
-                <img class="fille" src="" alt="profil tchateur">
-                <img class="fille" src="" alt="profil tchateur">
-                <img class="fille" src="" alt="profil tchateur">
-                <img class="fille" src="" alt="profil tchateur">
-                <img class="fille" src="" alt="profil tchateur">
+            <div id="box" class="row col-12 justify-content-around ">
+              <div id="chat" class="card col-lg-8 col-12"></div>
+              <div id="femme" class="col-lg-3 col-12 ">
+                <h3 id="choix" class="text-left"></h3>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">stef <br> 18 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">fanny <br> 38 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">lolo <br> 22 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">kristel <br> 64 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">lili <br> 41 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">faustine <br> 22 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">laurie <br> 52 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">pau <br> 24 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">sophie <br> 49 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">sab <br> 26 ans</p>
+                </div>
               </div>
             </div>
             <div class="finition row col-12 justify-content-start">
               <input  id="message" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre Message"></input >
-              <button id="envoyer" class="btn btn-warning">Envoyer</button>
+              <button id="envoyer" class="btn btn-warning" data-placement="left" >Envoyer</button>
             </div>
         </section>
         </div>
