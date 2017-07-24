@@ -45,8 +45,12 @@ h2{
 }
 
 #chat{
-  background-color: white;
   width: 100%;
+}
+
+#chat, #femme{
+  border-radius: 10px;
+  background-color: white;
   height: 350px;
   overflow-y:scroll;
 }
@@ -63,25 +67,53 @@ h2{
 
 .robot, .conversationU{
   display: flex;
-  border: 1px solid red;
-  border-radius:10px;
   width:70%;
-  opacity: 0.8;
 }
 
-.robot img{
+.messageOrdi img{
   width: 50px;
 }
 
 .conversationU{
   justify-content:flex-end;
-  background-color: yellow;
   margin-left: 25%;
+}
+
+.conversationU p{
+  text-align: right;
+  margin-right: 5px;
+  background-color: #6B6B6B;
+  padding:5px;
+  border:2px solid #EF88B5;
+  border-radius: 10px;
+}
+
+.robot p{
+  margin-right: 5px;
+  background-color:#EF88B5;
+  padding:5px;
+  border-radius: 10px;
+}
+
+
+
+#femme div p{
+  background-color:#EF88B5;
+  border-radius: 10px;
+  width:25%;
+  margin-left: 20px;
+}
+
+#femme{
+  padding:5px;
+}
+
+#femme img{
+  margin-left: 20px;
 }
 
 .robot{
   justify-content:flex-start;
-  background-color: red;
   margin-right: 25%;
 }
 
