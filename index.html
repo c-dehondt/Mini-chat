@@ -24,28 +24,31 @@
       <main class="container">
         <h1 class="text-center">Mini Chat</h1>
         <div class="row justify-content-around">
-          <div class="card">
-            <h2>Entrez votre pseudo</h2>
-            <input  id="name" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre pseudo"></input >
-            <button id="valider" class="btn btn-warning">Envoyer</button>
+          <div id="accueil" class="row justify-content-center col-12 ">
+            <img id="imgAccueil" src="img/tchater.jpg" alt="logo">
+            <div class="inscription justify-content-center">
+              <h2 class="text-center">Entrez votre pseudo</h2>
+              <input  id="name" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre pseudo"></input >
+              <button id="valider" class="btn btn-warning">Envoyer</button>
+            </div>
           </div>
-          <section class="col-12 tchat row">
-            <h2 class="text-center">djcize,xoqs;xa</h2>
-          <div id="discussion" class="row col-12">
-          <div id="chat" class="card col-10"></div>
-          <div class="">
-            <img src="" alt="profil tchateur">
-            <img src="" alt="profil tchateur">
-            <img src="" alt="profil tchateur">
-            <img src="" alt="profil tchateur">
-            <img src="" alt="profil tchateur">
-            <img src="" alt="profil tchateur">
-          </div>
-            <div class="row justify-content-around">
+          <section id="discussion" class="col-12 tchat row">
+            <h2 class="text-center col-12">Bienvenue</h2>
+            <div  class="row col-10">
+              <div id="chat" class="card col-10"></div>
+              <div id="femme" class="col-2">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+                <img class="fille" src="" alt="profil tchateur">
+              </div>
+            </div>
+            <div class="finition row col-12 justify-content-start">
               <input  id="message" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre Message"></input >
               <button id="envoyer" class="btn btn-warning">Envoyer</button>
             </div>
-          </div>
         </section>
         </div>
       </main>

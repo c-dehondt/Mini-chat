@@ -1,5 +1,47 @@
+@font-face {
+  font-family: "farrah";
+  src: url(../font/JessyHeart.ttf);
+}
+
+.accueil{
+  position: relative;
+  width:80vw;
+  height:80vh;
+}
+
+.inscription{
+  position: absolute;
+  width: 20vw;
+  bottom:5vw;
+  left: 33vw;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+h1{
+ font-family: "farrah";
+ font-size: 10vw;
+ margin: 0%
+}
+
+h2{
+  font-size:2vw;
+  margin: 30px;
+  color: white;
+}
+
+.finition{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#imgAccueil{
+  height:70vh;
+}
+
 #discussion{
-  /*display: none;*/
+  display: none;
 }
 
 #chat{
@@ -11,11 +53,12 @@
 
 .tchat{
   background-color: #719DB0;
-
 }
 
-input{
-
+#message{
+  width: 50vw;
+  height: 5vh;
+  margin-right: 10px;
 }
 
 .robot, .conversationU{
@@ -24,6 +67,10 @@ input{
   border-radius:10px;
   width:70%;
   opacity: 0.8;
+}
+
+.robot img{
+  width: 50px;
 }
 
 .conversationU{
