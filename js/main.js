@@ -17,11 +17,17 @@ function melange(imgFemme) {
     }
 }
 
+$("#imgAccueil").click(function () {
+  $("#inscription").show();
+  $("#femme").show();
+  $("#imgAccueil").hide();
+});
+
   $("#valider").click(function() {
   pseudo = $("#name").val();
   $("#choix").append("<p class='message'>"+ "<img src='img/moi.png'>" + "Bonjour " +pseudo + "</p>");
   $("#Femme").val("src=imgFemme[i]");
-  $("#discussion").show();
+  $("#discussion").show().css("display", "flex");
   $("#accueil").hide();
 });
 
@@ -41,6 +47,7 @@ for (var i = 0; i < profil.length; i++) {
 
     $("#chat").append("<div class='conversationU'>" +
       "<p class='message'>" + $("#message").val()+"</p>"+ "<img src='img/moi.png'>" + "</div>");
+      $("#chat").scrollTop($("#chat").height());
 
     setTimeout(function () {
       $("#chat").append("<img class='messageOrdi' src='img/points.gif'>");
@@ -51,5 +58,6 @@ for (var i = 0; i < profil.length; i++) {
       robot= texte[Math.trunc(Math.random() * texte.length)];
       $("#chat").append("<div class='robot'>" + "<img src='" + imgRobot[0].src +"' >" +
       "<p class='messageOrdi'>"+ robot + "</p>" +"</div>");
+      $("#chat").scrollTop($("#chat").height());
     },3000 );
   });

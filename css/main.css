@@ -3,20 +3,8 @@
   src: url(../font/JessyHeart.ttf);
 }
 
-.accueil{
-  position: relative;
-  width:80vw;
-  height:80vh;
-}
-
-.inscription{
-  position: absolute;
-  width: 20vw;
-  bottom:5vw;
-  left: 33vw;
-  align-items: center;
-  display: flex;
-  flex-flow: column;
+#inscription{
+  display: none;
 }
 
 h1{
@@ -28,7 +16,6 @@ h1{
 h2{
   font-size:2vw;
   margin: 30px;
-  color: white;
 }
 
 .finition{
@@ -37,7 +24,7 @@ h2{
 }
 
 #imgAccueil{
-  height:70vh;
+  height:80vh;
 }
 
 #discussion{
@@ -70,10 +57,6 @@ h2{
   width:70%;
 }
 
-.messageOrdi img{
-  width: 50px;
-}
-
 .conversationU{
   justify-content:flex-end;
   margin-left: 25%;
@@ -84,7 +67,6 @@ h2{
   margin-right: 5px;
   background-color: #6B6B6B;
   padding:5px;
-  border:2px solid #EF88B5;
   border-radius: 10px;
 }
 
@@ -118,8 +100,28 @@ h2{
 }
 
 img{
-  text-align:left;
   width: auto;
   height:50px;
   border-radius: 10px;
+}
+
+/*************************************************telephone*********************************************/
+
+@media screen and (max-width:900px){
+  #box{
+    margin: auto;
+  }
+
+  #femme{
+    overflow-x: scroll;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  #femme p{
+    display: none;
+  }
 }
