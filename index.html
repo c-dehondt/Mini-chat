@@ -26,11 +26,15 @@
         <div class="row justify-content-around">
           <div id="accueil" class="row justify-content-center col-12 ">
             <img id="imgAccueil" src="img/tchater.jpg" alt="logo">
-            <div id="inscription" class="justify-content-center">
+            <div id="inscription" class="row justify-content-center">
               <h2 class="text-center">Entrez votre pseudo</h2>
-              <input  id="name" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre pseudo"></input >
-              <button id="valider" class="btn btn-warning">Envoyer</button>
+            <div class="md-form input-group">
+              <span class="input-group-btn">
+                <button id="valider" class="btn btn-primary btn-lg" type="button">Go!</button>
+              </span>
+              <input id="name" type="search" class="form-control" placeholder="Taper votre pseudo...">
             </div>
+           </div>
           </div>
           <section id="discussion" class="col-12 tchat row">
             <h2 class="text-center col-12">Bienvenue</h2>
@@ -47,6 +51,74 @@
                 <div class="row">
                   <img class="fille" src="" alt="profil tchateur">
                   <p class="col-7">fanny <br> 38 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">lolo <br> 22 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">kristel <br> 64 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">lili <br> 41 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">faustine <br> 22 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">laurie <br> 52 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">pau <br> 24 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">sophie <br> 49 ans</p>
+                </div>
+
+                <div class="row">
+                  <img class="fille" src="" alt="profil tchateur">
+                  <p class="col-7">sab <br> 26 ans</p>
+                </div>
+              </div>
+            </div>
+            <div class="finition row col-12 justify-content-start">
+              <input  id="message" class="utilisateur" name="description" type="text" class="input-block-level" placeholder="Taper votre Message"></input >
+              <button id="envoyer" class="btn btn-warning" data-placement="left" >Envoyer</button>
+            </div>
+        </section>
+        </div>
+      </main>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
+
                 </div>
 
                 <div class="row">
